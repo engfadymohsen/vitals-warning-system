@@ -19,7 +19,7 @@ class Hypertension_Vital_Warning {
         // ******** WILL DISPLAY A QUESTION ********
         // -----------------------------------------
         else if (Systolic < 110 || Diastolic < 70)
-            return this.Borderline_Hypotension_Question_Result(1);
+            return this.Borderline_Hypotension_Question_Result(0); // The Parameter Input Comes From Flutter       
         // In Case of Blood Pressure is Uncontrolled Hypertension
         // ******** URGENT VISIT WILL BE RECOMMENDED ********
         // --------------------------------------------------
@@ -45,6 +45,8 @@ class Hypertension_Vital_Warning {
             return text_7 + text_8;
         }
         // In Case of Blood Pressure is Well Controlled Hypertension
+        // ********** Good Sign Message Will Be Displayed **********
+        // ---------------------------------------------------------
         else if (Systolic < 130 || Diastolic < 80) {
             const text_9 = "You have Well Controlled Hypertension.\n";
             const text_10 = "Please continue your great job";
