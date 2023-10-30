@@ -23,7 +23,7 @@ class Hypertension_Vital_Warning{
         // ******** WILL DISPLAY A QUESTION ********
         // -----------------------------------------
         else if (Systolic < 110 || Diastolic < 70)
-        return this.Borderline_Hypotension_Question_Result(1);        
+        return this.Borderline_Hypotension_Question_Result(1);    // The Parameter Input Comes From Flutter       
 
 
         // In Case of Blood Pressure is Uncontrolled Hypertension
