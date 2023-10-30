@@ -57,6 +57,8 @@ class Hypertension_Vital_Warning{
         
 
         // In Case of Blood Pressure is Well Controlled Hypertension
+        // ********** Good Sign Message Will Be Displayed **********
+        // ---------------------------------------------------------
         else if (Systolic < 130 || Diastolic < 80){
             const text_9 = "You have Well Controlled Hypertension.\n";
             const text_10 = "Please continue your great job";
